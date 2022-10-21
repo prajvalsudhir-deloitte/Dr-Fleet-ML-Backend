@@ -1,0 +1,28 @@
+commands to build and run docker container:
+
+    build docker image:
+        - sudo docker image build -t fleet_python:0.0.1 Python_Backend
+    run docker container
+        - sudo docker run --name new-container fleet_python:0.0.1
+
+other commands:
+
+    list all images:
+            - sudo docker images
+
+    list any running containers:
+            - sudo docker ps
+
+    list all containers:
+            - sudo docker ps -a
+
+    remove docker image:
+            - sudo docker image rm [IMAGE_NAME]
+            ex: sudo docker image rm fleet_python:0.0.1
+
+    stop docker container:
+            - sudo docker stop [CONTAINER_NAME]
+            ex: sudo docker stop new-container
+
+    start docker container:
+            - sudo docker start [CONTAINER_NAME]
